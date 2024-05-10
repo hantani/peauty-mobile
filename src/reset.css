@@ -1,0 +1,78 @@
+/* Reset CSS */
+
+/* Box sizing border-box for all elements */
+html,
+body {
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -0.025em;
+  line-height: 1;
+}
+
+/* Remove default margins and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+li,
+figure,
+figcaption,
+blockquote,
+fieldset,
+pre,
+button,
+input,
+textarea,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default button styling */
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Remove default form element styling */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Remove default anchor styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Additional resets can be added as needed */

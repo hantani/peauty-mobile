@@ -1,0 +1,30 @@
+.menu-wrapper {
+  position: absolute;
+  top: 61.5px;
+  left: 0;
+  transform: translateX(100%);
+  transition: all 0.3s;
+
+  &.on {
+    transform: translateX(0);
+  }
+
+  .main-menu {
+    background-color: white;
+    width: 100vw;
+    height: calc(100vh - 61.5px);
+    padding: 25px 15px;
+
+    li {
+      margin-top: 27px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      a {
+        font-weight: 500;
+      }
+    }
+  }
+}
