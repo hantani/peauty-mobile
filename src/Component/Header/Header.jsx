@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import { publicUrl } from "../../Variable/variable";
@@ -6,6 +6,7 @@ import Menu from "../Menu/Menu";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
+  const headerRef = useRef();
 
   const onClick = () => {
     setToggle((prevState) => !prevState);
@@ -14,7 +15,7 @@ const Header = () => {
 
   return (
     <div className="top-menu">
-      <header className="top-header">
+      <header className="top-header" ref={headerRef}>
         <Link className="top-logo" to="/">
           <img src={publicUrl + "/img/top-logo.png"} alt="top-logo" />
         </Link>

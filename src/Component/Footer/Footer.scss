@@ -1,0 +1,25 @@
+.footer {
+  background-color: #ebebeb;
+  padding: 15px;
+  .footer-lists {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    li {
+      > a {
+        font-size: 12px;
+        color: #333;
+        font-weight: 500;
+      }
+    }
+  }
+  .corp-txt {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 10px;
+  }
+}
