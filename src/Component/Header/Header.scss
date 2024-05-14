@@ -1,5 +1,14 @@
 .top-menu {
   position: relative;
+  background-color: #fff;
+  z-index: 100a;
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 }
 .top-header {
   display: flex;
@@ -43,6 +52,11 @@
       height: 21px;
       background: url(../../../public/img/my.png);
       background-size: 100% 100%;
+
+      &.on {
+        background: url(../../../public/img/my-on.png);
+        background-size: 100% 100%;
+      }
     }
     .close-btn {
       width: 17px;

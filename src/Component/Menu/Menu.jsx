@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Menu.css";
+import UserMenu from "../UserMenu/UserMenu";
 
-const Menu = ({ toggle }) => {
+const Menu = ({ toggle, myToggle }) => {
   const menuRef = useRef();
 
   useEffect(() => {
@@ -32,6 +33,7 @@ const Menu = ({ toggle }) => {
           <Link>이용안내</Link>
         </li>
       </ul>
+      <UserMenu myToggle={myToggle} />
     </div>
   );
 };
