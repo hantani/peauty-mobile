@@ -18,7 +18,7 @@ const Menu = ({ toggle, myToggle }) => {
     <div className="menu-wrapper" ref={menuRef}>
       <ul className="main-menu">
         <li>
-          <Link>PEAUTY</Link>
+          <Link to="/peauty">PEAUTY</Link>
         </li>
         <li>
           <Link>스타일리스트</Link>
