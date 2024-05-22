@@ -21,7 +21,7 @@ const Menu = ({ toggle, myToggle }) => {
           <Link to="/peauty">PEAUTY</Link>
         </li>
         <li>
-          <Link>스타일리스트</Link>
+          <Link to="/stylist">스타일리스트</Link>
         </li>
         <li>
           <Link>스타일샵</Link>
