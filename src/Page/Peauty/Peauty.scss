@@ -1,4 +1,6 @@
 .peauty {
+  min-height: 100vh;
+
   .section-one {
     margin-top: 20px;
     .img-wrapper {
@@ -62,12 +64,32 @@
   }
   .section-two {
     background-color: white;
+    padding-top: 0;
 
     .heading {
+      font-size: 24px;
+      text-align: center;
+      font-weight: 700;
     }
     .txt {
+      line-height: 1.5;
+      text-align: center;
+      margin-top: 20px;
+
+      > span {
+        color: #00a96f;
+      }
     }
     .last-txt {
+      font-size: 20px;
+      text-align: center;
+      margin-top: 15px;
+
+      > span {
+        font-size: 20px;
+        font-weight: 700;
+        color: #007f53;
+      }
     }
   }
 }

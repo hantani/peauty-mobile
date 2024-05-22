@@ -26,13 +26,13 @@ const Header = () => {
   };
 
   useEffect(() => {
-    const yOffset = headerRef.current.getBoundingClientRect().bottom;
-
     window.addEventListener("scroll", () => {
-      if (window.scrollY > yOffset) {
-        headerRef.current.classList.add("fixed");
-      } else {
-        headerRef.current.classList.remove("fixed");
+      if (headerRef.current) {
+        if (window.scrollY > 80) {
+          headerRef.current.classList.add("fixed");
+        } else {
+          headerRef.current.classList.remove("fixed");
+        }
       }
     });
   }, []);

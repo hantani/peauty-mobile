@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../Component/Header/Header";
 import Footer from "../../Component/Footer/Footer";
 import { publicUrl } from "../../Variable/variable";
 import "./Peauty.css";
 
+const $html = document.querySelector("html");
+
 const Peauty = () => {
+  useEffect(() => {
+    $html.classList.remove("locked");
+  }, []);
+
   return (
     <>
       <Header></Header>
