@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../Component/Header/Header";
 import Footer from "../../Component/Footer/Footer";
 import "./Main.css";
 import { publicUrl } from "../../Variable/variable";
 import { Link } from "react-router-dom";
 
+const $html = document.querySelector("html");
+
 const Main = () => {
+  useEffect(() => {
+    $html.classList.remove("locked");
+  }, []);
+
   return (
     <>
       <Header></Header>

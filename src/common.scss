@@ -39,6 +39,10 @@ html {
     background-image: url(/public/img/arrow.png);
     background-size: 100% 100%;
   }
+
+  &.square-type {
+    border-radius: 0;
+  }
 }
 .secondary-btn {
   border: 1px solid #d4d4d4;
@@ -58,5 +62,18 @@ html {
     height: 5.5px;
     background-image: url(/public/img/arrow-02.png);
     background-size: 100% 100%;
+  }
+}
+select {
+  border: 1px solid #d7d7d7;
+  height: 40px;
+  padding: 0 8px;
+
+  &.primary-type {
+    background-color: #00a96f;
+    color: #fff;
+    height: 40px;
+    border: none;
+    text-align: center;
   }
 }
