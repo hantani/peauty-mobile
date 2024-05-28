@@ -63,6 +63,18 @@ html {
     background-image: url(/public/img/arrow-02.png);
     background-size: 100% 100%;
   }
+  .map-icon {
+    display: inline-block;
+    width: 25px;
+    height: 30px;
+    background-image: url(/public/img/map-icon.png);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &.square-type {
+    border-radius: 0;
+  }
 }
 select {
   border: 1px solid #d7d7d7;

@@ -1,22 +1,22 @@
 import React from "react";
-import "./Stylist.css";
 import Header from "../../Component/Header/Header";
 import Footer from "../../Component/Footer/Footer";
 import Card from "../../Component/Card/Card";
+import "./StyleShop.css";
 import useLock from "../../useHooks/useLock";
 
-const Stylist = () => {
+const StyleShop = () => {
   useLock();
 
   return (
     <>
       <Header />
-      <div className="stylist">
-        <p className="heading">스타일리스트</p>
+      <div className="style-shop">
+        <p className="heading">스타일 샵</p>
         <div className="options">
           <div className="select-wrapper">
             <select name="" id="">
-              <option value="">추천</option>
+              <option value="">평점</option>
             </select>
             <select name="" id="">
               <option value="">여</option>
@@ -32,11 +32,15 @@ const Stylist = () => {
           </div>
         </div>
         <div className="btns-wrapper">
-          <select name="" id="">
-            <option value="">옵션 입력</option>
-          </select>
           <button type="button" className="primary-btn">
             바로 예약가능
+          </button>
+          <button type="button" className="primary-btn">
+            픽업가능
+          </button>
+          <button type="button" className="secondary-btn">
+            <span className="map-icon"></span>
+            지도보기
           </button>
         </div>
         <div className="cards-wrapper">
@@ -55,4 +59,4 @@ const Stylist = () => {
   );
 };
 
-export default Stylist;
+export default StyleShop;

@@ -24,10 +24,10 @@ const Menu = ({ toggle, myToggle }) => {
           <Link to="/stylist">스타일리스트</Link>
         </li>
         <li>
-          <Link>스타일샵</Link>
+          <Link to="/style-shop">스타일샵</Link>
         </li>
         <li>
-          <Link>스타펫</Link>
+          <Link to="/star-pet">스타펫</Link>
         </li>
         <li>
           <Link>이용안내</Link>
