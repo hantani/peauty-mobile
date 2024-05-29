@@ -3,6 +3,7 @@ import Header from "../../Component/Header/Header";
 import Footer from "../../Component/Footer/Footer";
 import "./StarPet.css";
 import useLock from "../../useHooks/useLock";
+import { publicUrl } from "../../Variable/variable";
 
 const StarPet = () => {
   useLock();
@@ -30,11 +31,136 @@ const StarPet = () => {
         </div>
         <div className="weekly-star-pet">
           <p className="heading">금주의 스타 펫</p>
-          <div className="img-slide">
-            <div className="img-wrapper"></div>
-            <div className="img-wrapper"></div>
-            <div className="img-wrapper"></div>
+          <div className="img-slide-wrapper">
+            <div className="img-slide">
+              <div className="slide">
+                <div className="img-wrapper">
+                  <img src={publicUrl + "/img/test-img.png"} alt="test" />
+                </div>
+                <div className="txt-wrapper">
+                  <p className="like">
+                    예뻐요 <span>♥</span> 1235
+                  </p>
+                  <p className="name">Tory</p>
+                </div>
+              </div>
+              <div className="slide">
+                <div className="img-wrapper">
+                  <img src={publicUrl + "/img/test-img.png"} alt="test" />
+                </div>
+                <div className="txt-wrapper">
+                  <p className="like">
+                    예뻐요 <span>♥</span> 1235
+                  </p>
+                  <p className="name">Tory</p>
+                </div>
+              </div>
+              <div className="slide">
+                <div className="img-wrapper">
+                  <img src={publicUrl + "/img/test-img.png"} alt="test" />
+                </div>
+                <div className="txt-wrapper">
+                  <p className="like">
+                    예뻐요 <span>♥</span> 1235
+                  </p>
+                  <p className="name">Tory</p>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+        <div className="star-pet-photoes">
+          <p className="heading">스타 펫</p>
+          <ul className="photo-lists">
+            <li>
+              <div className="img-wrapper">
+                <img src={publicUrl + "/img/test-img.png"} alt="test" />
+              </div>
+              <div className="txt-wrapper">
+                <p className="like">
+                  예뻐요 <span>♥</span> 1235
+                </p>
+                <p className="name">Tory</p>
+              </div>
+            </li>
+            <li>
+              <div className="img-wrapper">
+                <img src={publicUrl + "/img/test-img.png"} alt="test" />
+              </div>
+              <div className="txt-wrapper">
+                <p className="like">
+                  예뻐요 <span>♥</span> 1235
+                </p>
+                <p className="name">Tory</p>
+              </div>
+            </li>
+            <li>
+              <div className="img-wrapper">
+                <img src={publicUrl + "/img/test-img.png"} alt="test" />
+              </div>
+              <div className="txt-wrapper">
+                <p className="like">
+                  예뻐요 <span>♥</span> 1235
+                </p>
+                <p className="name">Tory</p>
+              </div>
+            </li>
+            <li>
+              <div className="img-wrapper">
+                <img src={publicUrl + "/img/test-img.png"} alt="test" />
+              </div>
+              <div className="txt-wrapper">
+                <p className="like">
+                  예뻐요 <span>♥</span> 1235
+                </p>
+                <p className="name">Tory</p>
+              </div>
+            </li>
+            <li>
+              <div className="img-wrapper">
+                <img src={publicUrl + "/img/test-img.png"} alt="test" />
+              </div>
+              <div className="txt-wrapper">
+                <p className="like">
+                  예뻐요 <span>♥</span> 1235
+                </p>
+                <p className="name">Tory</p>
+              </div>
+            </li>
+            <li>
+              <div className="img-wrapper">
+                <img src={publicUrl + "/img/test-img.png"} alt="test" />
+              </div>
+              <div className="txt-wrapper">
+                <p className="like">
+                  예뻐요 <span>♥</span> 1235
+                </p>
+                <p className="name">Tory</p>
+              </div>
+            </li>
+            <li>
+              <div className="img-wrapper">
+                <img src={publicUrl + "/img/test-img.png"} alt="test" />
+              </div>
+              <div className="txt-wrapper">
+                <p className="like">
+                  예뻐요 <span>♥</span> 1235
+                </p>
+                <p className="name">Tory</p>
+              </div>
+            </li>
+            <li>
+              <div className="img-wrapper">
+                <img src={publicUrl + "/img/test-img.png"} alt="test" />
+              </div>
+              <div className="txt-wrapper">
+                <p className="like">
+                  예뻐요 <span>♥</span> 1235
+                </p>
+                <p className="name">Tory</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
       <Footer></Footer>

@@ -30,7 +30,7 @@ const Menu = ({ toggle, myToggle }) => {
           <Link to="/star-pet">스타펫</Link>
         </li>
         <li>
-          <Link>이용안내</Link>
+          <Link to="/info-use">이용안내</Link>
         </li>
       </ul>
       <UserMenu myToggle={myToggle} />
