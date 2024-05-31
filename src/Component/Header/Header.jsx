@@ -26,6 +26,10 @@ const Header = () => {
   };
 
   useEffect(() => {
+    if (window.screenY > 80) {
+      headerRef.current.classList.add("fixed");
+    }
+
     window.addEventListener("scroll", () => {
       if (headerRef.current) {
         if (window.scrollY > 80) {
@@ -59,7 +63,7 @@ const Header = () => {
           </button>
         ) : (
           <div className="btns-wrapper">
-            <button type="button" className="log-in"></button>
+            <Link to="/sign-up" className="log-in"></Link>
             <button
               type="button"
               className="my"
