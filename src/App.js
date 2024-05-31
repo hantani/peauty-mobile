@@ -7,6 +7,7 @@ import StyleShop from "./Page/StyleShop/StyleShop";
 import StarPet from "./Page/StarPet/StarPet";
 import InfoUse from "./Page/InfoUse/InfoUse";
 import SingUp from "./Page/SignUp/SignUp";
+import PetName from "./Page/PetName/PetName";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/star-pet" element={<StarPet />} />
         <Route path="/info-use" element={<InfoUse />} />
         <Route path="/sign-up" element={<SingUp />} />
+        <Route path="/my/pet-name" element={<PetName />} />
       </Routes>
     </BrowserRouter>
   );

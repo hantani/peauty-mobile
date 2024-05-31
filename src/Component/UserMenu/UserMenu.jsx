@@ -57,7 +57,7 @@ const UserMenu = ({ myToggle }) => {
         {myPet && (
           <ul className="sub-menu">
             <li>
-              <Link>Pet Name</Link>
+              <Link to="/my/pet-name">Pet Name</Link>
             </li>
             <li>
               <Link>캘린더</Link>
