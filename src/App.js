@@ -8,6 +8,7 @@ import StarPet from "./Page/StarPet/StarPet";
 import InfoUse from "./Page/InfoUse/InfoUse";
 import SingUp from "./Page/SignUp/SignUp";
 import PetName from "./Page/PetName/PetName";
+import CalendarPage from "./Page/Calendar/Calendar";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/info-use" element={<InfoUse />} />
         <Route path="/sign-up" element={<SingUp />} />
         <Route path="/my/pet-name" element={<PetName />} />
+        <Route path="/calendar" element={<CalendarPage />} />
       </Routes>
     </BrowserRouter>
   );

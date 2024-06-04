@@ -60,7 +60,7 @@ const UserMenu = ({ myToggle }) => {
               <Link to="/my/pet-name">Pet Name</Link>
             </li>
             <li>
-              <Link>캘린더</Link>
+              <Link to="/calendar">캘린더</Link>
             </li>
             <li>
               <Link>사진</Link>
