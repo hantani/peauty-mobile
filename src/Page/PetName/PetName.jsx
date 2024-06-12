@@ -2,8 +2,10 @@ import React, { useEffect, useRef } from "react";
 import Header from "../../Component/Header/Header";
 import Footer from "../../Component/Footer/Footer";
 import "./PetName.css";
+import useLock from "../../useHooks/useLock";
 
 const PetName = () => {
+  useLock();
   const selectRef = useRef();
 
   useEffect(() => {

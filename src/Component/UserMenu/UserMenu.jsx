@@ -30,14 +30,14 @@ const UserMenu = ({ myToggle }) => {
     }
   };
 
-  const settingOnClick = () => {
-    setSetting((prevState) => !prevState);
-    if (setting === false) {
-      settingBtnRef.current.classList.add("on");
-    } else {
-      settingBtnRef.current.classList.remove("on");
-    }
-  };
+  // const settingOnClick = () => {
+  //   setSetting((prevState) => !prevState);
+  //   if (setting === false) {
+  //     settingBtnRef.current.classList.add("on");
+  //   } else {
+  //     settingBtnRef.current.classList.remove("on");
+  //   }
+  // };
 
   useEffect(() => {
     if (myToggle) {
@@ -63,31 +63,28 @@ const UserMenu = ({ myToggle }) => {
               <Link to="/calendar">캘린더</Link>
             </li>
             <li>
-              <Link>사진</Link>
+              <Link to="/photo">사진</Link>
             </li>
           </ul>
         )}
       </li>
       <li>
         <button type="button" onClick={reservOnClick} ref={reservBtnRef}>
-          <span className="txt">예약하기</span>
+          <span className="txt">예약</span>
           <span className="arrow"></span>
         </button>
         {reserv && (
           <ul className="sub-menu">
             <li>
-              <Link>Pet Name</Link>
+              <Link to="/reservation">예약하기</Link>
             </li>
             <li>
-              <Link>캘린더</Link>
-            </li>
-            <li>
-              <Link>사진</Link>
+              <Link>예약내역</Link>
             </li>
           </ul>
         )}
       </li>
-      <li>
+      {/* <li>
         <button type="button" ref={settingBtnRef} onClick={settingOnClick}>
           <span className="txt">설정</span>
           <span className="arrow"></span>
@@ -97,15 +94,9 @@ const UserMenu = ({ myToggle }) => {
             <li>
               <Link>Pet Name</Link>
             </li>
-            <li>
-              <Link>캘린더</Link>
-            </li>
-            <li>
-              <Link>사진</Link>
-            </li>
           </ul>
         )}
-      </li>
+      </li> */}
     </ul>
   );
 };

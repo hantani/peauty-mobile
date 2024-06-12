@@ -1,14 +1,64 @@
 .calendar {
   padding: 35px 15px;
-  .heading {
-    font-size: 18px;
-    padding-bottom: 18px;
-    font-weight: 500;
-    color: #333;
-    text-align: center;
-    border-bottom: 1px solid #c3c3c3;
-  }
+  min-height: 100vh;
+
   .reserv-wrapper {
-    .h
+    margin-top: 50px;
+    .heading {
+      font-size: 15px;
+      color: #333;
+      span {
+        margin-left: 5px;
+        color: #00a96f;
+      }
+    }
+    .card-lists {
+      margin-top: 20px;
+      .card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #aee2d0;
+        border-radius: 8px;
+
+        .time-wrapper {
+          p {
+            &:first-child {
+              margin-bottom: 10px;
+            }
+            > span {
+              font-weight: 500;
+              &:first-child {
+                font-weight: 700;
+                color: #666;
+                margin-right: 8px;
+              }
+            }
+          }
+        }
+        .btn-wrapper {
+          button {
+            padding: 0 29px;
+          }
+        }
+
+        &.disabled {
+          border: 1px solid #e9e9e9;
+
+          .time-wrapper {
+            > p {
+              span {
+                color: #666;
+              }
+            }
+          }
+          .btn-wrapper {
+            button {
+              color: #999;
+            }
+          }
+        }
+      }
+    }
   }
 }
